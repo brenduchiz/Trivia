@@ -1,3 +1,4 @@
+
 function alerta()
 {
 var mensaje;
@@ -7,30 +8,47 @@ if (nombre == null || nombre == "") {
         mensaje = "Bienvenida";
         } else {
             mensaje = "Bienvenida " + nombre;
-            var gameplay = prompt ('¿Quieres jugar SI O NO?');
-            if (gameplay == ("SI") || ("si"))     {
-            var firstQuestion = prompt('¿Cuanto es 2+ 2?')
-          }
+              document.getElementById("usuario").innerHTML = mensaje;
+            var gameplay = prompt ('¿Quieres jugar 1.si 2.no ?');
+            if (gameplay == ("1")) {
+              var firstQuestion = prompt('¿Cuanto es 2+ 2?');
+              if (firstQuestion = ("4")) {
+                var secondQuestion = prompt ("¿Cuanto es 5*1?")
+                if (secondQuestion=("5")) {
+                    var thirdQuestion= prompt ("¿Cuanto es 1000-500?")
+                    if (thirdQuestion= ("500")) {
+                      alert("Vamos a ver tu resultado!!!!!!!")
+                      if (true) {
+                        document.getElementById("tableok").innerHTML = "CORRECTAS!!!!!";
+                        document.getElementById("tablewrong").innerHTML = "MALAS!!!!!";
+
+
+                      }
+
+                    }
+
+                }
+                }
+
+              }else {
+              document.getElementById("the_end").innerHTML = "JUGAREMOS PARA LA PROXIMA!!!!!";
+                    }
 
 
 
-if (firstQuestion == ("4")) {
-// Si contesta correctamente mandarle la segunda pregunta
-var secondQuestion = prompt ("¿Cuanto es 5*1?")
+
+
+
+
+
+
+
+
+
+
+//cierre else
+  }
+
+
+//the end of the functi
 }
-if(secondQuestion == ("5")){
-  // Si contesta correctamente mandarle la tercer pregunta
-  var thirdQuestion= prompt ("¿Cuanto es 1000-500?")
-}
-  if(thirdQuestion == "500"){
-    alert("Vamos a ver tu resultado!!!!!!!")
-            }else {
-
-              alert("Respuesta Incorrecta");
-            }
-
-
-
-          }
-      document.getElementById("usuario").innerHTML = mensaje;
-    }

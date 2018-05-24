@@ -58,6 +58,7 @@ margin: 0;
 padding: 30px;
 }
 
+
 body{
 background-color: white;
   }
@@ -68,8 +69,11 @@ background-color: white;
   box-sizing: border-box;
   border-collapse: collapse;
   margin: 5em 4em 3em 2em;
-  }
+}
+
 .table5 {
   box-sizing: border-box;
       border: 1px solid black;
         font-size: 80px;
+        
+}
